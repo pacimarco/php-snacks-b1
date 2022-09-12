@@ -6,17 +6,19 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 */
 
 $random=array();
+
 for($i=0; $i<15; $i++)
 {
-$random[]=rand(0,100)."<br />";
+    $number=rand(0,100);
 
-if (!in_array($number,$random)){
-    $random[] = $number;
-}
+    if (!in_array($number,$random)){
+        $random[] = $number;
+    }
 
 }
+echo '<pre>';
 print_r($random);
-<div></div>
+echo '</pre>';
 
 
 ?>

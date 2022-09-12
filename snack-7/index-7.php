@@ -1,6 +1,6 @@
 <?php
-phpinfo();
-/*
+
+
 $alunni=[
     [
         'nome'=>'Sabrina',
@@ -24,14 +24,14 @@ $alunni=[
         'voto_3'=>'9',
     ],
 ];
-function mediaVoto($voti){
-    return (($alunni['voto_1'] + $alunni['voto_2'] + $alunni['voto_3'])/3);
+function mediaVoto($alunni){
+    return (($alunni[$i]['voto_1'] + $alunni['voto_2'] + $alunni['voto_3'])/3);
 }
 for($i=0;count($alunni);$i++){
 $datiAlunno = $alunni[$i];
 
-    echo($alunni['nome'] . " " . $alunni['cognome'] . " " . mediaVoto($voti));
+    echo($alunni[$i]['nome'] . " " . $alunni[$i]['cognome'] . " " . mediaVoto($alunni));
 }
-*/
+
 ?>
 
