@@ -1,5 +1,6 @@
 <?php
-
+phpinfo();
+/*
 $alunni=[
     [
         'nome'=>'Sabrina',
@@ -31,5 +32,6 @@ $datiAlunno = $alunni[$i];
 
     echo($alunni['nome'] . " " . $alunni['cognome'] . " " . mediaVoto($voti));
 }
-
+*/
 ?>
+
