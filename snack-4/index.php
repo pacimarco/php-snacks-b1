@@ -16,6 +16,7 @@ if (!in_array($number,$random)){
 
 }
 print_r($random);
+<div></div>
 
 
 ?>
