@@ -5,32 +5,31 @@ $alunni=[
     [
         'nome'=>'Sabrina',
         'cognome'=>'Rossi',
-        'voto_1'=>'8',
-        'voto_2'=>'5',
-        'voto_3'=>'7',
+        'voti'=>[5,7,8]
+        
     ],
     [
         'nome'=>'Giada',
         'cognome'=>'Bianchi',
-        'voto_1'=>'6',
-        'voto_2'=>'4',
-        'voto_3'=>'6',
+        'voti'=>[7,9,8]
     ],
     [
         'nome'=>'Ugo',
         'cognome'=>'Verdi',
-        'voto_1'=>'9',
-        'voto_2'=>'5',
-        'voto_3'=>'9',
+        'voti'=>[5,2,4]
     ],
 ];
-function mediaVoto($alunni){
-    return (($alunni[$i]['voto_1'] + $alunni['voto_2'] + $alunni['voto_3'])/3);
-}
-for($i=0;count($alunni);$i++){
-$datiAlunno = $alunni[$i];
+for ($i=0;$i<count($alunni);$i++){
+    $alunno = $alunni [$i];
+    $somma=0;
+    $voti = $alunno["voti"];
+    for ($j=0;$j<count($alunno)["$voti"];$j++){
+        $somma += $voti[$j];
+    }
 
-    echo($alunni[$i]['nome'] . " " . $alunni[$i]['cognome'] . " " . mediaVoto($alunni));
+    $media = $somma / count($voti);
+
+    echo $alunno["nome"] . ' ' . $alunno["cognome"] . ' ' . $media . '<br>';
 }
 
 ?>
